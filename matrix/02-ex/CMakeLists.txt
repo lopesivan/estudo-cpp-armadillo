@@ -1,0 +1,6 @@
+cmake_minimum_required(VERSION 3.10)
+project(ex-01 CXX)
+set(CMAKE_CXX_STANDARD 14)
+find_package(Armadillo REQUIRED)
+add_executable(ex-01 ex-01.cpp)
+target_link_libraries(ex-01 PUBLIC armadillo)
