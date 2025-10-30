@@ -12,7 +12,8 @@ LD       = $(CC)
 WARNING  = -Wall -Werror -Wpedantic -Wno-parentheses
 DEBUG    = -g
 CPPFLAGS = $(DEBUG) -std=c++14 $(WARNING) $(ARMADILLO_CFLAGS)
-LDFLAGS  = $(ARMADILLO_LDLIBS)
+LDLIBS   = $(ARMADILLO_LDLIBS)
+#LDFLAGS  =
 
 all  : ex-01
 ex-01: ex-01.o
